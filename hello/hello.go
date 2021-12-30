@@ -1,6 +1,13 @@
 package main
-import "fmt"
-import "rsc.io/quote"
+
+import (
+	"fmt"
+	"example.com/greetings"
+)
+
 func main() {
-	fmt.Println(quote.Go())
+	//get a greeting message and print it.
+	message := greetings.Hello("Kento")
+	fmt.Println(message)
 }
+
